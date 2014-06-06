@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-cn">
+	<head id="Head1" runat="server">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link href="css/global.css" type="text/css" rel="stylesheet" />
+		<link href="js/syntaxhighlighter/styles/shCore.css" type="text/css" rel="stylesheet" />
+		<link href="js/syntaxhighlighter/styles/shThemeDefault.css" type="text/css" rel="stylesheet" />
+		<title>lazyT demo</title>
+		<script type="text/javascript" src="js/syntaxhighlighter/scripts/shCore.js"></script>
+		<script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+		<script type="text/javascript" src="js/lazyT.last.js"></script>
+		<script type="text/javascript">
+			SyntaxHighlighter.config.clipboardSwf = 'js/scripts/clipboard.swf';
+			SyntaxHighlighter.all();			
+		</script>
+	</head>
+	<body>
+		<div id="header" class="header">
+			<h1>lazyT 示例</h1>
+			<ul>
+				<li><a href="demo1.html"><i>例子</i></a></li>
+				<li><a href="demo2.html"><i>{##  #}</i></a></li>
+				<li><a href="demo3.html"><i>{#?#} {#??#} {#?#}</i></a></li>
+				<li><a href="demo4.html"><i>{#~D.dataList:item:index#} {#~#}</i></a></li>
+				<li><a href="demo5.html"><i>顶通中的应用</i></a></li>
+				<li><a href="extendlazyT.html"><i>扩展lazyT</i></a></li>
+				<li><a href="speedTest.html"><i>速度测试1</i></a></li>
+				<li><a href="speedTest2.html"><i>速度测试2</i></a></li>
+			</ul>	
+		</div>
+		<!-- 示例1 begin -->
+		<div class="container">
+			<div class="box_tit">使用if语句块示例，{#?#} {#??#} {#?#}</div>
+			<div class="wbox clearfix">
+				<div class="table_zh">
+					<h3>模板：</h3>
+<pre class="brush:javascript;gutter:false;">
+<!-- 模板可以存放在<script>标签里 type属性设置成非标准值 如text/lazyT-template存放在 -->
+<script type="text/lazyT-template" id="">
+	<div>
+		{#? D.value<0.3#}
+		value <0.3; {#=D.value#}
+		{#??D.value<0.6#}
+		value <0.6; {#=D.value#}
+		{#?? D.value <0.9#}
+		value <0.9; {#=D.value#}
+		{#??#}
+		value < 1; {#=D.value#}
+		{#?#}
+	</div>
+</script>
+</pre>
+<h3>运行代码:</h3>
+<pre class="brush:javascript;gutter:false">
+	&lt;script type=&quot;text/javascript&quot;&gt;
+		$(function () {
+			var template = document.getElementById(&#039;t1&#039;).innerHTML,
+				htmlCreator = lazyT.tmpl(template),
+				htmlStr = htmlCreator({
+					value: Math.random()
+				});
+			document.getElementById(&#039;c1&#039;).innerHTML = htmlStr;
+		});
+	&lt;/script&gt;
+</pre>
+				</div>
+				<div class="table_zh">
+					<h3>结果:</h3>
+				</div>
+				<div id="c1" class="table_zh">
+				</div>
+			</div>
+		</div>
+		<!-- 模板可以存放在<script>标签里 type属性设置成非标准值 如text/lazyT-template存放在 -->
+		<script type="text/lazyT-template" id="t1">
+	<div>
+		{#? D.value<0.3#}
+		value <0.3; {#=D.value#}
+		{#??D.value<0.6#}
+		value <0.6; {#=D.value#}
+		{#?? D.value <0.9#}
+		value <0.9; {#=D.value#}
+		{#??#}
+		value < 1; {#=D.value#}
+		{#?#}
+	</div>
+		</script>
+		<script type="text/javascript">
+			$(function () {
+				var template = document.getElementById('t1').innerHTML,
+					htmlCreator = lazyT.tmpl(template),
+					htmlStr = htmlCreator({
+						value: Math.random()
+					});
+				document.getElementById('c1').innerHTML = htmlStr;
+			});
+		</script>
+		<!-- 示例1 end -->
+		<div class="footer">
+			
+		</div>
+		
+	</body>
+</html>
