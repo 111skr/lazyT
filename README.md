@@ -67,6 +67,7 @@ a light weight template engine use for bitauto
 推荐使用，语法简单实用，利于读写。
 
 ####    条件判断
+
         {#? 判断表达式 #}    //等价于 if( )
         
         {#?? 判断表达式#}    //等价于 else if( )
@@ -84,8 +85,7 @@ a light weight template engine use for bitauto
 ###	原生语法
 	
 	{## js code #}
-
-例如：
+        例如：
 	{## if(D.isLogined){ #}
 		{#= D.UserName#}
 	{## } #}
