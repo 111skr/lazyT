@@ -1,0 +1,81 @@
+@charset "utf-8";
+/**
+ * @Site      http://www.bitauto.com
+ * @Author    wangzhihui
+ * @Updated   $Date: 2011/01/24 9:10:28 $
+ * @Updated   $by:wangzhihui
+ */
+
+/*reset*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+body { font-size: 12px; font-family: Arial, Helvetica, sans-serif; background: #fff; line-height: 150%; color: #3C3C3C }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img { border: 0; }
+legend { display: none; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal; }
+ol, ul { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+a:link, a:visited { color: #095281; text-decoration: none; }
+a:hover { color: #ff6600; text-decoration: underline; }
+i { font-style: normal }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden }
+.clearfix { zoom: 1; display: inline-block; _height: 1px }
+*html .clearfix { height: 1% }
+*+html .clearfix { height: 1% }
+.clearfix { display: block }
+.clear { clear: both; height: 0; overflow: hidden; font-size: 0; line-height: 0 }
+/*header*/
+.header { background: url(../images/header.png) repeat-x top left; height: 88px; width: 100%; overflow: hidden; zoom: 1; position: relative; min-width: 990px }
+.header h1 { background: url(../images/logo.jpg) no-repeat top left; width: 135px; height: 53px; text-indent: -9999px; margin: 10px 0 0 10px }
+.header ul { position: absolute; top: 57px; left: 263px }
+.header ul li { float: left }
+.header ul li a, .header ul li a:visited { display: block; height: 31px; background: url(../images/icons.png) no-repeat 0 0; font-size: 14px; color: #fff; line-height: 36px; font-weight: bold; float: left; padding-left: 15px }
+.header ul li a i { display: block; height: 31px; background: url(../images/icons.png) no-repeat right 0; float: left; padding-right: 15px; cursor: pointer }
+.header ul li.current a, .header ul li.current a:visited { background: url(../images/icons.png) no-repeat 0 -31px; color: #1d5890 }
+.header ul li.current a i { background: url(../images/icons.png) no-repeat right -31px; color: #1d5890 }
+.login { position: absolute; top: 14px; right: 10px; width: auto }
+.login span { color: #fff }
+.login a, .login a:visited, .login a:hover, .login a:active { margin: 0 10px; color: #F8F1A5 }
+.subnav { background: url(../images/icons.png) repeat-x 0 -96px; height: 36px; line-height: 36px; padding-left: 190px; position: absolute; top: 88px; left: 0px; width: 100% }
+.subnav a { margin: 0 10px; color: #3C3C3C }
+.subnav a.current { color: #666; font-weight: bold }
+/*footer*/
+.footer { clear: both; color: #666666; margin: 20px auto 50px; padding: 20px 0 0; text-align: center; width: 950px; }
+.footer a, .footer a:visited, .footer a:hover { color: #095281 }
+/*翻页样式*/
+.the_pages { clear: both; font-family: simSum; height: 20px; position: relative; text-align: center }
+.the_pages div { float: left; left: 50%; padding: 10px 0; position: relative }
+.the_pages a, .the_pages span, .the_pages em, .the_pages select { border: 1px solid #C5DAF3; display: block; float: left; font-size: 12px; height: 17px; line-height: 18px; margin: 0 0 0 4px; padding: 2px 8px; position: relative; text-align: center; text-decoration: none; white-space: nowrap; width: auto; left: 0 }
+.the_pages a, .the_pages span, .the_pages em, .the_pages select { left: -50% }
+.the_pages span { border: 0; }
+.the_pages select { height: 23px; line-height: 23px; padding: 0px 0 0 0; }
+.the_pages select { float: left }
+.the_pages em { border: 1px solid #FFFFFF }
+.the_pages span.num { background: transparent none repeat scroll 0 0; border: medium none; color: #000000; padding: 2px 2px 2px 8px }
+.the_pages span { background: #FFFFFF none repeat scroll 0 0; border-color: #666666; color: #666666 }
+.the_pages a:link { background: #FFFFFF none repeat scroll 0 0 }
+.the_pages a:visited { background: #FFFFFF none repeat scroll 0 0 }
+.the_pages a:hover { background: #C5DAF3 none repeat scroll 0 0; border: 1px solid #C5DAF3; color: #104aa7; text-decoration: none }
+.the_pages a.linknow { background-color: #C5DAF3; border: 1px solid #C5DAF3; color: #FFFFFF }
+.the_pages span a { border: none; float: none; position: inherit; padding: 0; display: inherit }
+.the_pages span a:hover { border: none; background: none }
+.container { background: #fff url(../images/cont_bg.png) repeat-x top left; min-width: 950px; padding: 0 20px }
+.wbox { border: 1px solid #1B507C; width: 99.8%; margin-top: 10px; background: #fff; padding-bottom: 15px }
+.wbox h2 { background: #497BA9; height: 30px; line-height: 30px; color: #fff; border-bottom: 1px solid #1B507C; text-indent: 12px; font-size: 14px }
+.wbox h2 input.btn_p { float: none; height: 24px; line-height: 24px; margin-left: 10px }
+/**/
+.box_tit { height: 40px; line-height: 40px; border-bottom: 2px solid #666; font-size: 20px; font-weight: bold }
+/*table*/
+.table_zh { padding: 15px }
+.table_zh table { border: 1px solid #DCDCDC; table-layout: fixed }
+.table_zh th { background: url(../images/icons.png) repeat-x 0 -152px; height: 28px; line-height: 28px; text-align: center; font-weight: bold; border: 1px solid #DCDCDC; padding: 0 5px }
+.table_zh tr.double { background: #F2F6F9 }
+.table_zh tr.hover { background: #FFFFE1 }
+.table_zh td { border: 1px solid #DCDCDC; padding: 7px 5px; word-break: break-all; word-wrap: break-word; vertical-align: top; text-align: center }
+.table_zh td.t_l { text-align: left }
+.table_zh input { margin-right: 2px }
+.table_zh input.txt { width: 50px }
+.table_zh input.name { width: 260px }
+.table_zh span { margin-right: 10px }
+.btn a{ background:#497BAA; border:1px solid #E0E0E0; height:24px; line-height:24px; color:#fff;padding:0 15px; display:inline-block; margin-left:15px}
