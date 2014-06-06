@@ -21,7 +21,7 @@ a light weight template engine use for bitauto
 2.	提供便捷语法实现if，for逻辑
 3.	低复杂度
 4.	可扩展
-5.	执行效率较高（[性能测试](http://111skr.github.com/lazyT/lazyTDemo/speedTest.html)）
+5.	执行效率较高（[性能测试](http://111skr.github.com/lazyT/lazytDemo/speedTest.html)）
 
 
 ## 快速上手
@@ -56,7 +56,7 @@ a light weight template engine use for bitauto
 	document.getElementById('content').innerHTML = html;
 
 
-[演示](http://111skr.github.com/lazyT/lazyTDemo/demo1.html)
+[演示](http://111skr.github.com/lazyT/lazytDemo/demo1.html)
 
 ##	模板语法
 
@@ -104,5 +104,3 @@ a light weight template engine use for bitauto
 Released under the MIT
 
 ============
-
-[所有演示例子](http://aui.github.com/artTemplate/demo/index.html) | [引擎原理](http://cdc.tencent.com/?p=5723)
