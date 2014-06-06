@@ -29,7 +29,7 @@ a light weight template engine use for bitauto
 
 ### 编写模板
 
-使用一个``type="text/html"``的``script``标签存放模板：
+使用一个``type="text/x-lazyT-template"``的``script``标签存放模板：
 	
 	<script id="test" type="text/html">
 	<h1>{#= D.title#}</h1>
