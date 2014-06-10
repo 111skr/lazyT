@@ -14,6 +14,7 @@ a light weight template engine use for bitauto
 *	[方法](#方法)
 *	[更新日志](#更新日志)
 *	[授权协议](#授权协议)
+*	[使用示例](http://111skr.github.com/lazyT/lazyTDemo/demo1.html)
 
 ##	特性
 
@@ -56,7 +57,7 @@ a light weight template engine use for bitauto
 	document.getElementById('content').innerHTML = html;
 
 
-[演示](http://111skr.github.com/lazyT/lazytDemo/demo1.html)
+[演示](http://111skr.github.com/lazyT/lazyTDemo/demo1.html)
 
 ##	模板语法
 
