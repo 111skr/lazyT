@@ -31,7 +31,9 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h2>
+        <p>轻量级 javascript 模板引擎</p>
+
+<h2>
 <a name="%E7%9B%AE%E5%BD%95" class="anchor" href="#%E7%9B%AE%E5%BD%95"><span class="octicon octicon-link"></span></a>目录</h2>
 
 <ul>
@@ -48,6 +50,8 @@
 <li>  <a href="#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97">更新日志</a>
 </li>
 <li>  <a href="#%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE">授权协议</a>
+</li>
+<li>  <a href="http://111skr.github.com/lazyT/lazyTDemo/demo1.html">使用示例</a>
 </li>
 </ul><h2>
 <a name="%E7%89%B9%E6%80%A7" class="anchor" href="#%E7%89%B9%E6%80%A7"><span class="octicon octicon-link"></span></a>特性</h2>
@@ -93,7 +97,7 @@ html = lazyT.tmpl(template)(data);
 document.getElementById('content').innerHTML = html;
 </code></pre>
 
-<p><a href="http://111skr.github.com/lazyT/lazytDemo/demo1.html">演示</a></p>
+<p><a href="http://111skr.github.com/lazyT/lazyTDemo/demo1.html">演示</a></p>
 
 <h2>
 <a name="%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95" class="anchor" href="#%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95"><span class="octicon octicon-link"></span></a>模板语法</h2>
@@ -128,14 +132,11 @@ document.getElementById('content').innerHTML = html;
 <h3>
 <a name="%E5%8E%9F%E7%94%9F%E8%AF%AD%E6%B3%95" class="anchor" href="#%E5%8E%9F%E7%94%9F%E8%AF%AD%E6%B3%95"><span class="octicon octicon-link"></span></a>原生语法</h3>
 
-<pre><code>
-    {## js code #}
-
+<pre><code>{## js code #}
     例如：
-    
-    {## if(D.isLogined){ #}
-        {#= D.UserName#}
-    {## } #}
+{## if(D.isLogined){ #}
+    {#= D.UserName#}
+{## } #}
 </code></pre>
 
 <h2>
