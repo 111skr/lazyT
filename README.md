@@ -22,7 +22,7 @@ a light weight template engine use for bitauto
 2.	提供便捷语法实现if，for逻辑
 3.	低复杂度
 4.	可扩展
-5.	执行效率较高（[性能测试](http://111skr.github.com/lazyT/lazytDemo/speedTest.html)）
+5.	执行效率较高（[性能测试](http://111skr.github.io/lazyT/lazyTDemo/speedTest.html)）
 
 
 ## 快速上手
