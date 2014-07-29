@@ -76,22 +76,6 @@ var testList = [
     },
 
     {
-        name:'lazyT',
-        tester:function() {
-            // if (typeof console !== 'undefined') console.time('lazyT');
-            var source = document.getElementById('lazyT-template').innerHTML,
-            fn =lazyT.tmpl(source);
-            // if (typeof console !== 'undefined') console.timeEnd('lazyT');
-            // if (typeof console !== 'undefined') console.time('lazyT render');
-            for(var i=0;i<number;i++){
-                fn(data);
-            }
-            // if (typeof console !== 'undefined') console.timeEnd('lazyT render');
-            // if (typeof console !== 'undefined') console.log(fn.toString());
-        }
-    },
-
-    {
         name: 'doT',
         tester: function () {
             var source = document.getElementById('doT').innerHTML;
@@ -106,7 +90,22 @@ var testList = [
             // if (typeof console !== 'undefined') console.log(doTtmpl.toString());
         }
     },
-    
+
+    {
+        name:'lazyT',
+        tester:function() {
+            // if (typeof console !== 'undefined') console.time('lazyT');
+            var source = document.getElementById('lazyT-template').innerHTML,
+            fn =lazyT.tmpl(source);
+            // if (typeof console !== 'undefined') console.timeEnd('lazyT');
+            // if (typeof console !== 'undefined') console.time('lazyT render');
+            for(var i=0;i<number;i++){
+                fn(data);
+            }
+            // if (typeof console !== 'undefined') console.timeEnd('lazyT render');
+            // if (typeof console !== 'undefined') console.log(fn.toString());
+        }
+    },   
        
     {
         name: 'Handlebars',
