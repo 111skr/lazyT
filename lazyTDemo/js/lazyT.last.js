@@ -3,13 +3,16 @@
 
 	var lazyT = {
 		templateSettings: {
-			TemplateRegQueue: [{
-				reg: /(^|\r|\n)\t* +| +\t*(\r|\n|$)/g, //去掉换行
-				func: ' '
-			}, {
+			TemplateRegQueue: [
+			// {
+			// 	reg: /(^|\r|\n)\t* +| +\t*(\r|\n|$)/g, //去掉换行
+			// 	func: ' '
+			// },
+			{
 				reg: /\r|\n|\t|\/\*[\s\S]*?\*\//g,//去掉注释和空白
 				func: ''
-			}, {
+			}, 
+			{
 				reg: /'|\\/g, //对模板中的js字符串等添加转义字符
 				func: '\\$&'
 			}, {
@@ -39,13 +42,15 @@
 			PackagingRegQueue: [{
 				reg: /^([\s\S]+)$/g, //添加拼接字符串的变量和返回变量
 				func: "var res ='$1';return res;"
-			}, {
-				reg: /(\s|;|\}|^|\{)\s*res\s*\+\s*=\s*'\s*'\s*;/g, //去掉 res+=';'  ;res+='';  }res+='';  {res+='';
-				func: '$1'
-			}, {
-				reg: /\+'\s*'/g,
-				func: ''
-			}, {
+			}, 
+			// {
+			// 	reg: /(\s|;|\}|^|\{)\s*res\s*\+\s*=\s*'\s*'\s*;/g, //去掉 res+=';'  ;res+='';  }res+='';  {res+='';
+			// 	func: '$1'
+			// }, {
+			// 	reg: /\+'\s*'/g,
+			// 	func: ''
+			// }, 
+			{
 				reg: /(\s|;|\}|^|\{)res\+='\s*'\+/g, //去掉无用的空白字符串
 				func: '$1res+='
 			}],
